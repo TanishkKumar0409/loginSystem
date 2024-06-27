@@ -19,6 +19,10 @@
                 <input type="email" name="email" id="email">
                 <label for="address">Address</label>
                 <input type="text" name="address" id="address">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" name="confirm-password" id="confirm-password">
                 <button name="submit-button">submit</button>
             </form>
         </div>
