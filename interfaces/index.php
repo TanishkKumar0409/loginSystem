@@ -9,6 +9,10 @@
 
 <body>
     <section class="container">
+        <div class="sytem-head">
+            <h2>LOGIN AND REGISTRATION SYSTEM</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, commodi.</p>
+        </div>
         <div class="links">
             <a href="registrationform.php">Registration</a>
             <a href="loginform.php">Login</a>

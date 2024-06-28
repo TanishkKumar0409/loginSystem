@@ -9,6 +9,10 @@
 
 <body>
     <section class="container">
+        <div class="login-head">
+            <h1>LOGIN</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, maxime.</p>
+        </div>
         <div class="loginform">
             <form>
                 <label for="email">Email</label>

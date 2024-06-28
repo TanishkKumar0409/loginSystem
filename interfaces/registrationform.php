@@ -9,6 +9,10 @@
 
 <body>
     <section class="container">
+    <div class="login-head">
+            <h1>REGISTER</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, maxime.</p>
+        </div>
         <div class="registration">
             <form action="script.php" class="registration-form">
                 <label for="name">Name</label>

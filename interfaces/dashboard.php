@@ -9,6 +9,10 @@
 
 <body>
     <section class="container">
+    <div class="dashboard-head">
+            <h1>DASHBOARD</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, maxime.</p>
+        </div>
         <div class="dashborad-details">
             <h2>Name: Tanishk Kumar</h2>
             <h2>Phone: +91 95576 23131</h2>
