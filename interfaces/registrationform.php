@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/tailwind.css">
 </head>
 
 <body>
     <section class="container">
-    <div class="login-head">
+        <div class="login-head">
             <h1>REGISTER</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, maxime.</p>
         </div>
