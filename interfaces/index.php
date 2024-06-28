@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../assets/css/tailwind.css">
 </head>
 
-<body>
+<body class="flex justify-center items-center h-screen  bg-slate-950 text-white text-center">
     <section class="container">
         <div class="sytem-head">
             <h2>LOGIN AND REGISTRATION SYSTEM</h2>
