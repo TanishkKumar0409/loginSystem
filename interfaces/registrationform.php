@@ -24,7 +24,7 @@
                 <input class="border border-black rounded bg-slate-900 p-2 w-72 text-center m-2" type="password" name="password" id="password" placeholder="Please Enter Password">
                 <input class="border border-black rounded bg-slate-900 p-2 w-72 text-center m-2" type="password" name="confirm-password" id="confirm-password" placeholder="Please Confirm Passwor">
                 <br>
-                <button class="border border-black rounded bg-slate-900 p-2 w-72 text-center m-2" name="submit-button">submit</button>
+                <button class="border border-slate-900 rounded bg-slate-900 p-2 w-72 text-center m-2 hover:border-white" name="submit-button">submit</button>
             </form>
         </div>
     </section>

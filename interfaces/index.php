@@ -15,8 +15,8 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, commodi.</p>
         </div>
         <div class="links">
-            <a href="registrationform.php">Registration</a>
-            <a href="loginform.php">Login</a>
+            <a class="text-[#414acd55] hover:text-[#414acd]" href="registrationform.php">Registration</a>
+            <a class="text-[#414acd55] hover:text-[#414acd]" href="loginform.php">Login</a>
         </div>
     </section>
 </body>

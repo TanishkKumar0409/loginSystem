@@ -19,7 +19,7 @@
                 <input class="border border-black rounded bg-slate-900 p-2 w-72 text-center m-2" type="email" name="login-email" id="email" placeholder="Please Enter Your Email">
                 <input class="border border-black rounded bg-slate-900 p-2 w-72 text-center m-2" type="password" name="login-password" id="password" placeholder="Please Enter Password">
                 <br>
-                <button class="border border-black rounded bg-slate-900 p-2 w-72 text-center m-2" name="login-button">Login</button>
+                <button class="border border-slate-900 rounded bg-slate-900 p-2 w-72 text-center m-2 hover:border-white" name="login-button">Login</button>
             </form>
         </div>
     </section>

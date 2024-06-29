@@ -10,7 +10,7 @@
 
 <body class="flex justify-center items-center h-screen  bg-slate-950 text-white text-center overflow-hidden">
     <section class="container">
-    <div class="dashboard-head">
+        <div class="dashboard-head">
             <h1>DASHBOARD</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, maxime.</p>
         </div>
