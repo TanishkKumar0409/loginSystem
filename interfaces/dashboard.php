@@ -1,3 +1,6 @@
+<?php
+include '../assets/database_configs/session.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,10 +18,10 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, maxime.</p>
         </div>
         <div class="dashborad-details text-start p-2 md:left-[40%] relative">
-            <h2>Name: Tanishk Kumar</h2>
-            <h2>Phone: +91 95576 23131</h2>
-            <h2>Email: tanishkk60@gmail.com</h2>
-            <h2>Address: 198A, Shastrinagar, Seemadwar, Dehradun, Uttarakhand</h2>
+            <h2>Name: <?php echo $sname;?></h2>
+            <h2>Phone: +91<?php echo $sphone;?></h2>
+            <h2>Email:<?php echo $semail;?></h2>
+            <h2>Address: <?php echo $saddress;?></h2>
         </div>
     </section>
 </body>

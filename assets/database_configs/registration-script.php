@@ -13,6 +13,7 @@ if (isset($_POST['submit-button'])) {
         session_start();
         $_SESSION['s-email']=$email;
         $_SESSION['s-password']=$password;
+        header('location: ../../interfaces/dashboard.php');
     } else {
         echo "Password Doesn't Match";
     }
