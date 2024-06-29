@@ -15,7 +15,7 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, maxime.</p>
         </div>
         <div class="registration ">
-            <form action="script.php" class="registration-form justify-center">
+            <form action="../assets/database_configs/registration-script.php" method="POST" class="registration-form justify-center">
                 <input class="border border-black rounded bg-slate-900 p-2 w-72 text-center m-2" type="text" name="name" id="name" placeholder="Please Enter Your Name">
                 <input class="border border-black rounded bg-slate-900 p-2 w-72 text-center m-2" type="number" name="phone" id="phone" placeholder="Please Enter Your Contact Number">
                 <input class="border border-black rounded bg-slate-900 p-2 w-72 text-center m-2" type="email" name="email" id="email" placeholder="Please Enter Your Email">
