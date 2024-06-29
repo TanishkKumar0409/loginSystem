@@ -22,6 +22,7 @@ include '../assets/database_configs/session.php';
             <h2>Phone: +91<?php echo $sphone;?></h2>
             <h2>Email:<?php echo $semail;?></h2>
             <h2>Address: <?php echo $saddress;?></h2>
+            <a class="text-[#414acd55] hover:text-[#414acd]" href="../assets/database_configs/logout.php">logout</a>
         </div>
     </section>
 </body>
