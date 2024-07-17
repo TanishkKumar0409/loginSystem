@@ -1,15 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+:root {
+  --rubik: "Rubik", sans-serif;
+  --back-img: url(https://i.pinimg.com/originals/be/e2/76/bee276cfdbd7035729469f2029678526.gif);
+  --color-white: gray;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: var(--rubik);
 }
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url(https://i.pinimg.com/originals/be/e2/76/bee276cfdbd7035729469f2029678526.gif);
+  background: var(--back-img);
   background-size: cover;
 }
 .wrapper {
@@ -21,7 +27,7 @@ body {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  color: #fff;
+  color: var(--color-white);
 }
 .wrapper h1 {
   font-size: 32px;
@@ -39,15 +45,15 @@ body {
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 40px;
   font-size: 16px;
-  color: #fff;
+  color: var(--color-white);
   outline: none;
   transition: border 0.3s ease;
 }
 .input-box input::placeholder {
-  color: #fff;
+  color: var(--color-white);
 }
 .input-box input:focus {
-  border: 2px solid #fff;
+  border: 2px solid var(--color-white);
 }
 .input-box i {
   position: absolute;
@@ -64,7 +70,7 @@ body {
   margin-bottom: 20px;
 }
 .remember-forgot a {
-  color: #fff;
+  color: var(--color-white);
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -91,10 +97,10 @@ body {
   transition: all 0.3s ease;
 }
 .checkbox-container span::after {
-  content: '';
+  content: "";
   width: 10px;
   height: 10px;
-  background: #fff;
+  background: var(--color-white);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -103,7 +109,7 @@ body {
   transition: all 0.3s ease;
 }
 .checkbox-container input:checked + span {
-  border-color: #fff;
+  border-color: var(--color-white);
   background: #333;
 }
 .checkbox-container input:checked + span::after {
@@ -116,21 +122,21 @@ body {
   border: none;
   border-radius: 40px;
   font-size: 18px;
-  color: #fff;
+  color: var(--color-white);
   cursor: pointer;
   transition: background 0.3s ease, color 0.3s ease;
   margin-bottom: 10px;
 }
 .btn:hover {
   background: #55555579;
-  color: #fff;
+  color: var(--color-white);
 }
 .registered-link {
   text-align: center;
   font-size: 14px;
 }
 .registered-link a {
-  color: #fff;
+  color: var(--color-white);
   text-decoration: none;
   margin-left: 5px;
   transition: color 0.3s ease, text-decoration 0.3s ease;
