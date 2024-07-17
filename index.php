@@ -8,18 +8,19 @@
   <script src="https://kit.fontawesome.com/87f0afa689.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="wrapper" id="wrapper">
     <div id="login-form" class="form-container active">
       <form action="">
         <h1>Login</h1>
         <div class="input-box">
-          <input type="email" placeholder="Email" required />
-          <i class="fa-solid fa-envelope"></i>
+          <input id="login-email" type="email" placeholder="Email" required />
+          <i class="fa-solid fa-envelope" onclick="focusInput('login-email')"></i>
         </div>
         <div class="input-box">
-          <input type="password" placeholder="Password" required />
-          <i class="fa-solid fa-lock"></i>
+          <input id="login-password" type="password" placeholder="Password" required />
+          <i class="fa-solid fa-lock" onclick="focusInput('login-password')"></i>
         </div>
         <div class="remember-forgot">
           <label class="checkbox-container">
@@ -41,28 +42,28 @@
       <form action="">
         <h1>Register</h1>
         <div class="input-box">
-          <input type="text" placeholder="Full Name" required />
-          <i class="fa-solid fa-user"></i>
+          <input id="register-fullname" type="text" placeholder="Full Name" required />
+          <i class="fa-solid fa-user" onclick="focusInput('register-fullname')"></i>
         </div>
         <div class="input-box">
-          <input type="email" placeholder="Email" required />
-          <i class="fa-solid fa-envelope"></i>
+          <input id="register-email" type="email" placeholder="Email" required />
+          <i class="fa-solid fa-envelope" onclick="focusInput('register-email')"></i>
         </div>
         <div class="input-box">
-          <input type="tel" placeholder="Contact Number" required />
-          <i class="fa-solid fa-phone"></i>
+          <input id="register-contact" type="tel" placeholder="Contact Number" required />
+          <i class="fa-solid fa-phone" onclick="focusInput('register-contact')"></i>
         </div>
         <div class="input-box">
-          <input type="text" placeholder="Address" required />
-          <i class="fa-solid fa-location-dot"></i>
+          <input id="register-address" type="text" placeholder="Address" required />
+          <i class="fa-solid fa-location-dot" onclick="focusInput('register-address')"></i>
         </div>
         <div class="input-box">
-          <input type="password" placeholder="Password" required />
-          <i class="fa-solid fa-lock"></i>
+          <input id="register-password" type="password" placeholder="Password" required />
+          <i class="fa-solid fa-lock" onclick="focusInput('register-password')"></i>
         </div>
         <div class="input-box">
-          <input type="password" placeholder="Confirm Password" required />
-          <i class="fa-solid fa-lock"></i>
+          <input id="register-confirm-password" type="password" placeholder="Confirm Password" required />
+          <i class="fa-solid fa-lock" onclick="focusInput('register-confirm-password')"></i>
         </div>
         <button type="submit" class="btn">Register</button>
         <div class="registered-link">
