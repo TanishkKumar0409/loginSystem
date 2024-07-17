@@ -3,7 +3,14 @@
 :root {
   --rubik: "Rubik", sans-serif;
   --back-img: url(https://i.pinimg.com/originals/be/e2/76/bee276cfdbd7035729469f2029678526.gif);
-  --color-white: gray;
+  --color-white: rgba(128,128,128);
+  --color-trans-white:rgba(255,255,255,0.2);
+  --color-gray-light:#ddd;
+  --color-trans-black:rgba(0, 0, 0, 0.7);
+  --color-trans-black-2:rgba(0, 0, 0, 0.5);
+  --btn:#33333379;
+  --btn-hover:#55555579;
+  --check-back:#333;
 }
 
 * {
@@ -26,11 +33,11 @@ body {
   width: 90%;
   max-width: 400px;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.7);
+  background: var(--color-trans-black);
   backdrop-filter: blur(10px);
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--color-trans-white);
+  box-shadow: 0 0 20px var(--color-trans-black-2);
   color: var(--color-white);
   position: relative;
   overflow: hidden;
@@ -52,7 +59,7 @@ body {
   width: 100%;
   padding: 10px 45px 10px 20px;
   background: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid var(--color-trans-white);
   border-radius: 40px;
   font-size: 16px;
   color: var(--color-white);
@@ -70,7 +77,7 @@ body {
 
 .input-box i {
   position: absolute;
-  color: rgba(255, 255, 255, 0.2);
+  color: var(--color-trans-white);
   right: 20px;
   top: 50%;
   transform: translateY(-50%);
@@ -98,7 +105,7 @@ body {
 }
 
 .remember-forgot a:hover {
-  color: #ddd;
+  color: var(--color-gray-light);
   text-decoration: underline;
 }
 
@@ -115,7 +122,7 @@ body {
   width: 20px;
   height: 20px;
   display: inline-block;
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid var(--color-trans-white);
   border-radius: 5px;
   margin-right: 10px;
   position: relative;
@@ -138,7 +145,7 @@ body {
 
 .checkbox-container input:checked + span {
   border-color: var(--color-white);
-  background: #333;
+  background: var(--check-back);
 }
 
 .checkbox-container input:checked + span::after {
@@ -148,7 +155,7 @@ body {
 .btn {
   width: 100%;
   padding: 10px;
-  background: #33333379;
+  background: var(--btn);
   border: none;
   border-radius: 40px;
   font-size: 18px;
@@ -159,7 +166,7 @@ body {
 }
 
 .btn:hover {
-  background: #55555579;
+  background: var(--btn-hover);
   color: var(--color-white);
 }
 
@@ -176,7 +183,7 @@ body {
 }
 
 .registered-link a:hover {
-  color: #ddd;
+  color: var(--color-gray-light);
   text-decoration: underline;
 }
 
