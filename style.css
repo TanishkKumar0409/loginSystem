@@ -3,14 +3,14 @@
 :root {
   --rubik: "Rubik", sans-serif;
   --back-img: url(https://i.pinimg.com/originals/be/e2/76/bee276cfdbd7035729469f2029678526.gif);
-  --color-white: rgba(128,128,128);
-  --color-trans-white:rgba(255,255,255,0.2);
-  --color-gray-light:#ddd;
-  --color-trans-black:rgba(0, 0, 0, 0.7);
-  --color-trans-black-2:rgba(0, 0, 0, 0.5);
-  --btn:#33333379;
-  --btn-hover:#55555579;
-  --check-back:#333;
+  --color-white: rgba(128, 128, 128);
+  --color-trans-white: rgba(255, 255, 255, 0.2);
+  --color-gray-light: #ddd;
+  --color-trans-black: rgba(0, 0, 0, 0.7);
+  --color-trans-black-2: rgba(0, 0, 0, 0.5);
+  --btn: #33333379;
+  --btn-hover: #55555579;
+  --check-back: #333;
 }
 
 * {
@@ -201,4 +201,29 @@ body {
 
 .form-container.fade-out {
   opacity: 0;
+}
+
+.user-data {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.data-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color-trans-black-2);
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.data-item span {
+  font-size: 16px;
+}
+
+.data-item i {
+  color: var(--color-trans-white);
+  font-size: 20px;
+  cursor: pointer;
 }
