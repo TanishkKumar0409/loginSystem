@@ -26,7 +26,7 @@
           <label class="checkbox-container">
             <input type="checkbox" />
             <span></span>
-            Remember me
+            Show Password
           </label>
           <a href="#">Forgot Password</a>
         </div>
@@ -64,6 +64,13 @@
         <div class="input-box">
           <input id="register-confirm-password" type="password" placeholder="Confirm Password" required />
           <i class="fa-solid fa-lock" onclick="focusInput('register-confirm-password')"></i>
+        </div>
+        <div class="remember-forgot">
+          <label class="checkbox-container">
+            <input type="checkbox" />
+            <span></span>
+            Show Password
+          </label>
         </div>
         <button type="submit" class="btn">Register</button>
         <div class="registered-link">
