@@ -37,16 +37,35 @@
         <i class="fa-solid fa-lock" onclick="focusInput('update-confirm-password')"></i>
       </div>
       <div class="remember-forgot">
-          <label class="checkbox-container">
-            <input type="checkbox" />
-            <span></span>
-            Show Password
-          </label>
-          <a href="#">Forgot Password</a>
-        </div>
+        <label class="checkbox-container">
+          <input type="checkbox" class="show-password" data-form="update" />
+          <span></span>
+          Show Password
+        </label>
+        <a href="#">Forgot Password</a>
+      </div>
       <button type="submit" class="btn">Update</button>
     </form>
   </div>
   <script src="script.js"></script>
+  <script>
+    // Show password functionality
+    function togglePassword() {
+      const checkboxes = document.querySelectorAll('.show-password');
+      checkboxes.forEach(checkbox => {
+        const formType = checkbox.dataset.form;
+        const passwordInputs = document.querySelectorAll(`#${formType}-password, #${formType}-confirm-password`);
+        passwordInputs.forEach(input => {
+          input.type = checkbox.checked ? 'text' : 'password';
+        });
+      });
+    }
+
+    // Add event listener for checkboxes
+    document.querySelectorAll('.show-password').forEach(checkbox => {
+      checkbox.addEventListener('change', togglePassword);
+    });
+  </script>
 </body>
+
 </html>

@@ -24,7 +24,7 @@
         </div>
         <div class="remember-forgot">
           <label class="checkbox-container">
-            <input type="checkbox" />
+            <input type="checkbox" class="show-password" data-form="login" />
             <span></span>
             Show Password
           </label>
@@ -67,10 +67,11 @@
         </div>
         <div class="remember-forgot">
           <label class="checkbox-container">
-            <input type="checkbox" />
+            <input type="checkbox" class="show-password" data-form="register" />
             <span></span>
             Show Password
           </label>
+          <a href="#">Forgot Password</a>
         </div>
         <button type="submit" class="btn">Register</button>
         <div class="registered-link">
@@ -81,7 +82,31 @@
       </form>
     </div>
   </div>
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
+  <script>
+       // Show password
+       function togglePassword() {
+      // Loop through each checkbox
+      const checkboxes = document.querySelectorAll('.show-password');
+      checkboxes.forEach(checkbox => {
+        // Get the form type (login or register) from the data-form attribute
+        const formType = checkbox.dataset.form;
+        
+        // Find the password and confirm password inputs for the specific form
+        const passwordInputs = document.querySelectorAll(`#${formType}-password, #${formType}-confirm-password`);
+        
+        // Toggle password visibility based on checkbox state
+        passwordInputs.forEach(input => {
+          input.type = checkbox.checked ? 'text' : 'password';
+        });
+      });
+    }
+
+    // Add event listeners for checkboxes
+    document.querySelectorAll('.show-password').forEach(checkbox => {
+      checkbox.addEventListener('change', togglePassword);
+    });
+  </script>
 </body>
 
 </html>

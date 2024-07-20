@@ -29,16 +29,7 @@ function toggleForms() {
 document.getElementById("wrapper").style.height = `${
   document.getElementById("login-form").scrollHeight + 30
 }px`; // Initial height with an increase of 30px
+
 function focusInput(inputId) {
   document.getElementById(inputId).focus();
-}
-
-// show password
-function togglePasswordVisibility(spanId, password) {
-  const span = document.getElementById(spanId);
-  if (span.textContent === '••••••••') {
-    span.textContent = password; // Replace with the actual password
-  } else {
-    span.textContent = '••••••••';
-  }
 }
