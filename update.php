@@ -36,6 +36,14 @@
         <input id="update-confirm-password" type="password" name="confirm_password" placeholder="Confirm Password" />
         <i class="fa-solid fa-lock" onclick="focusInput('update-confirm-password')"></i>
       </div>
+      <div class="remember-forgot">
+          <label class="checkbox-container">
+            <input type="checkbox" />
+            <span></span>
+            Show Password
+          </label>
+          <a href="#">Forgot Password</a>
+        </div>
       <button type="submit" class="btn">Update</button>
     </form>
   </div>
