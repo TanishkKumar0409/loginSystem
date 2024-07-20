@@ -8,6 +8,10 @@
     <script src="https://kit.fontawesome.com/87f0afa689.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+<style>
+   
+</style>
+
 <body>
     <div class="wrapper">
         <h1>Your Profile</h1>
@@ -33,6 +37,11 @@
                 <span id="password">••••••••</span>
                 <i class="fa-solid fa-eye" onclick="togglePasswordVisibility('password', '9557623131')"></i>
             </div>
+        </div>
+        <div class="action-buttons">
+            <button class="btn">Update</button>
+            <button class="btn">Delete</button>
+            <button class="btn">Logout</button>
         </div>
     </div>
     <script src="script.js"></script>
