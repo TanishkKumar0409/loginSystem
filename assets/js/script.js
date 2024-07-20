@@ -33,3 +33,13 @@ document.getElementById("wrapper").style.height = `${
 function focusInput(inputId) {
   document.getElementById(inputId).focus();
 }
+
+// Show password
+function togglePasswordVisibility(spanId, password) {
+  const span = document.getElementById(spanId);
+  if (span.textContent === '••••••••') {
+    span.textContent = password; // Replace with the actual password
+  } else {
+    span.textContent = '••••••••';
+  }
+}

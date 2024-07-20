@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login System</title>
     <script src="https://kit.fontawesome.com/87f0afa689.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -29,7 +29,7 @@
                 <button type="submit" class="btn">Login</button>
             </form>
         </div>
-        <script src="script.js" defer></script>
+        <script src="assets/js/script.js" defer></script>
         <script>
             // Show password
             function togglePassword() {
