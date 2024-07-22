@@ -1,3 +1,7 @@
+<?php
+include "../assets/php/config.php";
+include "../assets/php/session.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,24 +22,19 @@
         <div class="user-data">
             <div class="data-item">
                 <span>Full Name:</span>
-                <span>Tanishk Kumar</span>
+                <span><?php echo $name ?></span>
             </div>
             <div class="data-item">
                 <span>Email:</span>
-                <span>Tanishkk60@gmail.com</span>
+                <span><?php echo $email ?></span>
             </div>
             <div class="data-item">
                 <span>Contact Number:</span>
-                <span>+91 95576 23131</span>
+                <span><?php echo $phone ?></span>
             </div>
             <div class="data-item">
                 <span>Address:</span>
-                <span>Seemadwar</span>
-            </div>
-            <div class="data-item">
-                <span>Password:</span>
-                <span id="password">••••••••</span>
-                <i class="fa-solid fa-eye" onclick="togglePasswordVisibility('password', '9557623131')"></i>
+                <span><?php echo $address ?></span>
             </div>
         </div>
         <div class="action-buttons">

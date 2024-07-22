@@ -11,6 +11,9 @@ if (isset($_POST['Rbtn'])) {
         $insert = "INSERT INTO users (user_name,user_email,user_phone,user_address,user_password) VALUES ('$Rname','$Remail','$Rphone','$Raddress','$Rpassword')";
         $insertquery = mysqli_query($connection, $insert);
         header("location:../../inner-pages/dashboard.php");
+        session_start();
+        $_SESSION['email']=$Remail;
+        $_SESSION['password']=$Rpassword;
     }else {
         echo "Password Missmatch";
     }
