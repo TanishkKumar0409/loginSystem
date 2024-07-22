@@ -2,7 +2,7 @@
 
 :root {
     --rubik: "Rubik", sans-serif;
-    --back-img: url(https://giffiles.alphacoders.com/105/105207.gif);
+    --back-img: url(../images/back1.gif);
     --color-white: rgba(128, 128, 128);
     --color-trans-white: rgba(255, 255, 255, 0.2);
     --color-gray-light: #ddd;

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Update Profile</title>
   <script src="https://kit.fontawesome.com/87f0afa689.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
   <div class="wrapper">
@@ -47,7 +47,7 @@
       <button type="submit" class="btn">Update</button>
     </form>
   </div>
-  <script src="assets/js/script.js"></script>
+  <script src="../assets/js/script.js"></script>
   <script>
     // Show password functionality
     function togglePassword() {
