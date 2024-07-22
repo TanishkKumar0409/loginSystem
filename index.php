@@ -39,30 +39,30 @@
       </form>
     </div>
     <div id="register-form" class="form-container">
-      <form action="">
+      <form action="assets/php/registrationScript.php" method="POST">
         <h1>Register</h1>
         <div class="input-box">
-          <input id="register-fullname" type="text" placeholder="Full Name" required />
+          <input id="register-fullname" type="text" placeholder="Full Name" name="Rname" required />
           <i class="fa-solid fa-user" onclick="focusInput('register-fullname')"></i>
         </div>
         <div class="input-box">
-          <input id="register-email" type="email" placeholder="Email" required />
+          <input id="register-email" type="email" placeholder="Email" name="Remail" required />
           <i class="fa-solid fa-envelope" onclick="focusInput('register-email')"></i>
         </div>
         <div class="input-box">
-          <input id="register-contact" type="tel" placeholder="Contact Number" required />
+          <input id="register-contact" type="tel" placeholder="Contact Number" name="Rphone" required />
           <i class="fa-solid fa-phone" onclick="focusInput('register-contact')"></i>
         </div>
         <div class="input-box">
-          <input id="register-address" type="text" placeholder="Address" required />
+          <input id="register-address" type="text" placeholder="Address" name="Raddress" required />
           <i class="fa-solid fa-location-dot" onclick="focusInput('register-address')"></i>
         </div>
         <div class="input-box">
-          <input id="register-password" type="password" placeholder="Password" required />
+          <input id="register-password" type="password" placeholder="Password" name="Rpassword" required />
           <i class="fa-solid fa-lock" onclick="focusInput('register-password')"></i>
         </div>
         <div class="input-box">
-          <input id="register-confirm-password" type="password" placeholder="Confirm Password" required />
+          <input id="register-confirm-password" type="password" placeholder="Confirm Password" name="Rcpassword" required />
           <i class="fa-solid fa-lock" onclick="focusInput('register-confirm-password')"></i>
         </div>
         <div class="remember-forgot">
@@ -73,7 +73,7 @@
           </label>
           <a href="#">Forgot Password</a>
         </div>
-        <button type="submit" class="btn">Register</button>
+        <button type="submit" class="btn" name="Rbtn">Register</button>
         <div class="registered-link">
           <p>
             Already have an account?<a href="#" onclick="toggleForms()">Login</a>
