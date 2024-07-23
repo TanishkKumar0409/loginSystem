@@ -13,7 +13,7 @@ include "../assets/php/session.php";
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <style>
-   
+
 </style>
 
 <body>
@@ -38,9 +38,11 @@ include "../assets/php/session.php";
             </div>
         </div>
         <div class="action-buttons">
-            <button class="btn">Update</button>
-            <button class="btn">Delete</button>
-            <button class="btn">Logout</button>
+            <form action="../assets/php/redirects.php" method="POST" style="width: 100%;">
+                <button class="btn" name="Rbtn">Update</button>
+                <button class="btn" name="Rbtn">Delete</button>
+                <button class="btn" name="Rlogout">Logout</button>
+            </form>
         </div>
     </div>
     <script src="../assets/js/script.js"></script>
