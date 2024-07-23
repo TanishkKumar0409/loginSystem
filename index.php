@@ -12,14 +12,14 @@
 <body>
   <div class="wrapper" id="wrapper">
     <div id="login-form" class="form-container active">
-      <form action="">
+      <form action="assets/php/loginScript.php" method="POST">
         <h1>Login</h1>
         <div class="input-box">
-          <input id="login-email" type="email" placeholder="Email" required />
+          <input id="login-email" type="email" placeholder="Email" name="Lemail" required />
           <i class="fa-solid fa-envelope" onclick="focusInput('login-email')"></i>
         </div>
         <div class="input-box">
-          <input id="login-password" type="password" placeholder="Password" required />
+          <input id="login-password" type="password" placeholder="Password" name="Lpassword" required />
           <i class="fa-solid fa-lock" onclick="focusInput('login-password')"></i>
         </div>
         <div class="remember-forgot">
@@ -30,7 +30,7 @@
           </label>
           <a href="#">Forgot Password</a>
         </div>
-        <button type="submit" class="btn">Login</button>
+        <button type="submit" name="Lbtn" class="btn">Login</button>
         <div class="registered-link">
           <p>
             Don't have an account?<a href="#" onclick="toggleForms()">Register</a>
