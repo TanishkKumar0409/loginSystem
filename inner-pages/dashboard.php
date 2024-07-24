@@ -12,9 +12,6 @@ include "../assets/php/session.php";
     <script src="https://kit.fontawesome.com/87f0afa689.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-<style>
-
-</style>
 
 <body>
     <div class="wrapper">
