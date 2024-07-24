@@ -1,3 +1,6 @@
+<?php
+include "../assets/php/session.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,19 +16,19 @@
     <form action="../assets/php/updateScript.php" method="POST">
       <h1>Update Profile</h1>
       <div class="input-box">
-        <input id="update-fullname" type="text" name="Uname" placeholder="Full Name" required />
+        <input id="update-fullname" type="text" name="Uname" placeholder="Full Name" value="<?php echo $name;?>" required />
         <i class="fa-solid fa-user" onclick="focusInput('update-fullname')"></i>
       </div>
       <div class="input-box">
-        <input id="update-email" type="email" name="Uemail" placeholder="Email" required />
+        <input id="update-email" type="email" name="Uemail" placeholder="Email" value="<?php echo $email;?>" required />
         <i class="fa-solid fa-envelope" onclick="focusInput('update-email')"></i>
       </div>
       <div class="input-box">
-        <input id="update-contact" type="tel" name="Uphone" placeholder="Contact Number" required />
+        <input id="update-contact" type="tel" name="Uphone" placeholder="Contact Number" value="<?php echo $phone;?>" required />
         <i class="fa-solid fa-phone" onclick="focusInput('update-contact')"></i>
       </div>
       <div class="input-box">
-        <input id="update-address" type="text" name="Uaddress" placeholder="Address" required />
+        <input id="update-address" type="text" name="Uaddress" placeholder="Address" value="<?php echo $address;?>" required />
         <i class="fa-solid fa-location-dot" onclick="focusInput('update-address')"></i>
       </div>
       <div class="input-box">
