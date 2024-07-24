@@ -14,6 +14,16 @@
         <div id="login-form" class="form-container active">
             <form action="../assets/php/updateScript.php" method="POST">
                 <h1>Confirm</h1>
+                <p>
+                    <?php
+                    session_start();
+                    if ($_SESSION['R'] == 'Rbtn1') {
+                        echo "Confirm Update Account";
+                    } else if ($_SESSION['R'] == 'Rbtn2') {
+                        echo "Confirm Delete Account";
+                    }
+                    ?>
+                </p>
                 <div class="input-box">
                     <input id="login-password" type="password" placeholder="Password" name="Cpassword" required />
                     <i class="fa-solid fa-lock" onclick="focusInput('login-password')"></i>
