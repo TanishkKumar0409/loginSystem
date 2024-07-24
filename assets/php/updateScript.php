@@ -3,8 +3,14 @@ include "config.php";
 include "session.php";
 if (isset($_POST['Cbtn'])) {
     $Cpassword = md5($_POST['Cpassword']);
-    if ($Cpassword == $Spassword) {
-        header("location:../../inner-pages/update.php");
+    if($_SESSION['R']=='Rbtn1'){
+        if ($Cpassword == $Spassword) {
+            header("location:../../inner-pages/update.php");
+        }
+    }else if($_SESSION['R']=='Rbtn2'){
+       $delete="DELETE FROM users WHERE user_email='$Semail' AND user_password='$Cpassword'";
+       $deletequery=mysqli_query($connection,$delete);
+       header("location:../../index");
     }
 }
 if (isset($_POST['Ubtn'])) {

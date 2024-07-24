@@ -36,8 +36,8 @@ include "../assets/php/session.php";
         </div>
         <div class="action-buttons">
             <form action="../assets/php/redirects.php" method="POST" style="width: 100%;">
-                <button class="btn" name="Rbtn">Update</button>
-                <button class="btn" name="Rbtn">Delete</button>
+                <button class="btn" name="Rbtn1">Update</button>
+                <button class="btn" name="Rbtn2">Delete</button>
                 <button class="btn" name="Rlogout">Logout</button>
             </form>
         </div>
