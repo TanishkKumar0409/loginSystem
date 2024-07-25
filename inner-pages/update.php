@@ -9,26 +9,28 @@ include "../assets/php/session.php";
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Update Profile</title>
   <script src="https://kit.fontawesome.com/87f0afa689.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="../assets/images/ghost-rider-favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
+
 <body>
   <div class="wrapper">
     <form action="../assets/php/updateScript.php" method="POST">
       <h1>Update Profile</h1>
       <div class="input-box">
-        <input id="update-fullname" type="text" name="Uname" placeholder="Full Name" value="<?php echo $name;?>" required />
+        <input id="update-fullname" type="text" name="Uname" placeholder="Full Name" value="<?php echo $name; ?>" required />
         <i class="fa-solid fa-user" onclick="focusInput('update-fullname')"></i>
       </div>
       <div class="input-box">
-        <input id="update-email" type="email" name="Uemail" placeholder="Email" value="<?php echo $email;?>" required />
+        <input id="update-email" type="email" name="Uemail" placeholder="Email" value="<?php echo $email; ?>" required />
         <i class="fa-solid fa-envelope" onclick="focusInput('update-email')"></i>
       </div>
       <div class="input-box">
-        <input id="update-contact" type="tel" name="Uphone" placeholder="Contact Number" value="<?php echo $phone;?>" required />
+        <input id="update-contact" type="tel" name="Uphone" placeholder="Contact Number" value="<?php echo $phone; ?>" required />
         <i class="fa-solid fa-phone" onclick="focusInput('update-contact')"></i>
       </div>
       <div class="input-box">
-        <input id="update-address" type="text" name="Uaddress" placeholder="Address" value="<?php echo $address;?>" required />
+        <input id="update-address" type="text" name="Uaddress" placeholder="Address" value="<?php echo $address; ?>" required />
         <i class="fa-solid fa-location-dot" onclick="focusInput('update-address')"></i>
       </div>
       <div class="input-box">
